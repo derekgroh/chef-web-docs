@@ -48,7 +48,7 @@ Properties
 ``domain_name``
    **Ruby Type:** String | **Default Value:** ``'name'``
 
-   The FQDN of the Active Directory domain to join. 
+   The FQDN of the Active Directory domain to join.
 
 ``domain_password``
    **Ruby Type:** String
@@ -97,7 +97,8 @@ Properties
 ``ou_path``
    **Ruby Type:** String
 
-   The path to the Organizational Unit where the host will be placed. 
+   The path to the Organizational Unit where the host will be placed. This needs to be presented in Distingished Name format Example: ``'OU=testOU,DC=domain,DC=Domain,DC=com'``. A default container like Computers are represented with ``'CN=Computers'``.
+   
 
 ``reboot``
    **Ruby Type:** Symbol | **Default Value:** ``:immediate``
